@@ -1,0 +1,92 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://www.colorcombos.com/images/colors/DDDDDD.png');
+    /* Add your Islamic background image */
+    background-size: cover;
+}
+
+
+.section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #ffffff transparent;
+    /* Pointer color */
+}
+
+h3 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+h3::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #ffffff;
+    /* Pointer color */
+}
+
+p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+p::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent transparent #f2f2f2;
+    /* Pointer color */
+}
+
+button {
+    background-color: #250fce;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    box-shadow: 0 3px 6px rgba(108, 92, 231, 0.3);
+    position: relative;
+}
+
+button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent transparent #6c5ce7;
+    /* Pointer color */
+}
+
+button:hover {
+    background-color: #4a3ccf;
+}

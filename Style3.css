@@ -1,0 +1,22 @@
+.review-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 8px;
+    background-color: #8a5348;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.review-button:hover {
+    background-color: #6d3a31;
+}
+
+.review-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}

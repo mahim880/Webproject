@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Review Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #1a5276;
+        }
+        form {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #555;
+        }
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        textarea {
+            height: 100px;
+        }
+        .rating {
+            margin-bottom: 20px;
+        }
+        .rating input[type="radio"] {
+            display: none;
+        }
+        .rating label {
+            display: inline-block;
+            cursor: pointer;
+            color: #ccc;
+        }
+        .rating label:before {
+            content: '★';
+            margin-right: 5px;
+        }
+        .rating input[type="radio"]:checked ~ label {
+            color: #ffcc00;
+        }
+        input[type="submit"] {
+            background-color: #1a5276;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #154360;
+        }
+    </style>
+</head>
+<body>
+    <h1>User Review Form</h1>
+
+    <form action="#" method="post">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="text" id="email" name="email" required>
+
+        <div class="rating">
+            <label for="rating">Your Rating:</label><br>
+            <input type="radio" id="star5" name="rating" value="5"><label for="star5" title="Excellent">5</label>
+            <input type="radio" id="star4" name="rating" value="4"><label for="star4" title="Very good">4</label>
+            <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="Good">3</label>
+            <input type="radio" id="star2" name="rating" value="2"><label for="star2" title="Poor">2</label>
+            <input type="radio" id="star1" name="rating" value="1"><label for="star1" title="Very poor">1</label>
+        </div>
+
+        <label for="review">Your Review:</label>
+        <textarea id="review" name="review" required></textarea>
+
+        <input type="submit" value="Submit Review">
+    </form>
+</body>
+</html>

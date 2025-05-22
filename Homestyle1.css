@@ -1,0 +1,142 @@
+.notification {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-image: url('https://img.freepik.com/free-photo/vivid-blurred-colorful-wallpaper-background_58702-3798.jpg?size=626&ext=jpg&ga=GA1.1.553209589.1713916800&semt=ais'); /* Replace 'your-islamic-background-image.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #8a5348;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.notification p {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    animation: moveText 10s linear infinite;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100%;
+}
+
+@keyframes moveText {
+    0% { left: 100%; }
+    100% { left: -100%; }
+}
+
+/* Rest of your CSS remains the same */
+
+@keyframes moveText {
+    0% { left: 100%; }
+    100% { left: -100%; }
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #60a7e2;
+    margin: 0;
+    padding: 0;
+}
+#map {
+    height: 400px;
+    width: 100%;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+.prayer_schedule {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+h1, h2, h3 {
+    color: #3d3d3d;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #8a5348;
+    width: 50%;
+    margin: 20px auto;
+}
+.menu {
+    background-color: #ffffff;
+    padding: 50px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #2f1dcff6;
+    color: rgb(255, 255, 255);
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #f07829e9;
+}
+
+img {
+    margin-bottom: 20px;
+}
+#prayer-times {
+    padding: 20px;
+    background-color: #a4bffe;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(215, 38, 38, 0.1);
+    margin-top: 20px;
+}
+
+#prayer-times ul {
+    list-style-type: none;
+    padding: 0;
+}
+#prayer-times ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+#prayer-times ul li:hover {
+    background-color: #16b4c0;
+    transition: background-color 0.3s ease;
+}
+#current-time {
+    background-color: rgba(228, 141, 11, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(151, 196, 29, 0.2);
+    padding: 20px;
+    font-size: 36px;
+    margin-top: 20px;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(253, 253, 253);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
